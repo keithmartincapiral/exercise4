@@ -46,7 +46,7 @@ public class RockPaperScissors{
                             case 1 -> user.setUserMove(rock);
                             case 2 -> user.setUserMove(paper);
                             case 3 -> user.setUserMove(scissors);
-                            default -> System.out.println("Please only put numbers between 1-3. Run this program to play again.");
+                            default -> System.out.println("Please only put numbers between 1-3.");
                           
                             
                         }
