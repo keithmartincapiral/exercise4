@@ -41,10 +41,7 @@ public class Move {
         compMove = m1;
 }  
     
-    /**
-     *
-     * @param m2
-     */
+    
     public void setUserMove(Move m2){
         userMove = m2;
     }
@@ -69,6 +66,9 @@ public class Move {
     public void setUserScore() {
         this.userScore = userScore + 1;
     }
+    public void setUserScore(int score) {
+        this.userScore = score;
+    }
 
     
     public int getCompScore() {
@@ -78,6 +78,9 @@ public class Move {
 
     public void setCompScore() {
         this.compScore = compScore + 1;
+    }
+    public void setCompScore(int score) {
+        this.compScore = score;
     }
     
     public void userWins(Move m1, Move m2){
