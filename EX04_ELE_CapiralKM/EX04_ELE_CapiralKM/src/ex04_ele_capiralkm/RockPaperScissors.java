@@ -70,9 +70,13 @@ public class RockPaperScissors{
                         
                         if(user.getUserScore() == roundsToWin){
                             System.out.println("User Wins!");
+                            user.setUserScore(0);
+				computer.setCompScore(0);
                         }
                         else if(computer.getCompScore()== roundsToWin){
                             System.out.println("Computer Wins!");
+                            computer.setCompScore(0);
+				user.setUserScore(0);
                         }
                         else{
                             continue;
