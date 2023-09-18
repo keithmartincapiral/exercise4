@@ -17,6 +17,7 @@ public class RockPaperScissors{
 		int roundsToWin = 2;
                 int choice = 0;
                 int move = 0;
+		int noOfRounds = 0;
                 
                 Scanner sc = new Scanner(System.in);
                 
@@ -87,9 +88,15 @@ public class RockPaperScissors{
             }
               }
                 case 2 ->{
+                    for(int k = 0; noOfRounds <= 0; k++){
                     System.out.println("How many wins are needed to win a match?");
-                    int noOfRounds = sc.nextInt();
-                    roundsToWin = noOfRounds;
+                        noOfRounds = sc.nextInt();
+                        if(noOfRounds >= 1){
+                        roundsToWin = noOfRounds;
+                        } else {
+                            System.out.println("Only put a number greater than or equal to 1.");
+                        }
+                    }
                     break;
                 }
                 case 3 ->{
